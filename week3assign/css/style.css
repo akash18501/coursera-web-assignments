@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box; 
+}
+body{
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar{
+  background-color: #BEAFAF !important;
+}
+.navbar-toggler-icon{
+  color: black; 
+}
+.para{
+  background-color: #E8DDDD !important; 
+  min-height: 1000px; 
+}
+.para h3{
+  color: black; 
+}
+
+@media screen and  (max-width:576px ) {
+  
+}
