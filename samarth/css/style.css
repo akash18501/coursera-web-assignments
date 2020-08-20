@@ -121,3 +121,42 @@ body{
 
 
 /* main content styling ends */
+
+
+/* products */
+
+#products{
+	background-color: #ECF7FA; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+}
+
+.card img{
+	min-height: 260px; 
+	max-height: 260px; 
+}
+
+.card{
+	min-height: 580px; 
+	max-height: 580px; 
+}
+.card .btn{
+	background-color: #468899;
+	padding: 10px; 
+	color: white;  
+}
+.card .btn:hover{
+	border: 2px solid #468899; 
+	background-color: white; 
+	color: #468899; 
+}
+.card{
+	box-shadow: 5px 5px 5px lightgrey;  
+	transition: box-shadow 0.2s ease-in,transform 0.2s ease-in; 
+}
+.card:hover{
+	box-shadow: 7px 7px 7px skyblue; 
+	transform: scale(1.01); 
+}
+
+/* products ends */
