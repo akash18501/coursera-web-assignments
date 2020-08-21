@@ -81,3 +81,20 @@ const appearonslide = new IntersectionObserver(callbackfunction3,options3);
 sliders.forEach(slider=>{
 	appearonslide.observe(slider); 
 })
+
+const button = document.querySelector(".show-hide"); 
+const togg = document.querySelector(".invisi"); 
+
+
+const featuretoggler = function(e){
+
+	togg.classList.toggle("d-none"); 
+
+	if(togg.classList.contains("d-none")){
+		e.target.innerText = "show More";
+	}else{
+		e.target.innerText = "show less";
+	}
+}
+
+button.addEventListener("click",featuretoggler); 

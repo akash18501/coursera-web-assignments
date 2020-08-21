@@ -1,4 +1,4 @@
-body{
+body,html{
 	margin: 0; 
 	padding: 0; 
 	box-sizing: border-box; 
@@ -70,11 +70,11 @@ body{
 
 #my-slider{
 	height: 100vh; 
-	width: 100%; 
+	/* width: 100%;  */
 }
 #my-slider img{
 	height: 100vh; 
-	width: 100% ; 
+	/* width: 100% ;  */
 }
 .carousel-item{
 	position: relative !important; 
@@ -104,7 +104,7 @@ body{
 /* styling main content */
 
 .main-content{
-	padding: 50px 0 50px 0; 
+	padding: 50px 0 0 0; 
 }
 
 .vision,.mission{
@@ -138,7 +138,7 @@ body{
 
 .card{
 	min-height: 580px; 
-	max-height: 580px; 
+	/* max-height: 580px;  */
 }
 .card .btn{
 	background-color: #468899;
@@ -151,12 +151,90 @@ body{
 	color: #468899; 
 }
 .card{
-	box-shadow: 5px 5px 5px lightgrey;  
+	box-shadow: 0px 10px 30px lightgrey;  
 	transition: box-shadow 0.2s ease-in,transform 0.2s ease-in; 
 }
 .card:hover{
-	box-shadow: 7px 7px 7px skyblue; 
+	box-shadow: 0px 10px 30px skyblue; 
 	transform: scale(1.01); 
 }
 
 /* products ends */
+
+/* features section */
+
+.features h2{font-size: 2.5rem; }
+
+.single-feature{
+	border: 1px solid lightgrey; 
+	box-shadow: 0 10px 20px  lightgrey; 
+	margin: 20px 0 20px 0; 
+	margin-left: 0; 
+	margin-right: 0; 
+	min-height:  147.6px; 
+}
+.feature-title{
+	background-color: #F9AAAA;
+	padding: 5px; 
+}
+.feature-description{
+	font-weight: bold; 
+}
+
+
+/* feature section ends */
+
+
+/* testimonial section; */
+
+.testimonial{
+	background-image:  linear-gradient(45deg,rgba(246, 166, 190,1),rgba(246, 166, 190,0.8),rgba(246, 166, 190,0.5),rgba(246, 166, 190,0.2)); 
+	padding: 50px; 
+}
+
+.testimonial-card{
+	background-color: #D3F8F9; 
+	padding: 20px; 
+	border-bottom-right-radius: 50px; 
+	border-top-left-radius: 50px; 
+}
+.test-image{
+	border-radius: 50%; 
+	margin-bottom: 20px; 
+}
+#t-slider .carousel-indicators li{
+	background-color: #51A7E9 
+}
+#t-slider .carousel-control-prev-icon{
+	background-color: #F49AE2 !important; 
+}
+#t-slider .carousel-control-next-icon{
+	background-color: #F49AE2 !important; 
+}
+/* testimonial section */
+
+
+/* footer section */
+
+.footer{
+	background-color: #095788;
+}
+.footer-quick-list a{
+	color: white; 
+	display: block; 
+	text-decoration: none; 
+	font-size: 1.2rem; 
+}
+.footer-quick-list a:hover{
+	color: pink; 
+}
+
+.social{
+	margin-left: 20px; 
+	color: white; 
+}
+
+.social:hover{
+	color: #CA277B;
+}
+/* footer section */
