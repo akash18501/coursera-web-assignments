@@ -2,6 +2,9 @@ console.log("hello world");
 
 const navigation = document.querySelector(".navbar"); 
 const slider = document.querySelector("#my-slider");
+const bimage = document.querySelector(".brand-image"); 
+const btitle = document.querySelector(".brand-title"); 
+
 
 const faders = document.querySelectorAll(".fade-in"); 
 const sliders = document.querySelectorAll(".slide-in"); 
@@ -17,10 +20,15 @@ const callbackfunction = function(entries,sliderobserver){
 
 		console.log(entry); 
 		if(!entry.isIntersecting){
-			navigation.classList.add("inverse"); 
+			navigation.classList.add("inverse");
+			bimage.classList.add("inverse-brand-image"); 
+			btitle.classList.add("inverse-brand-title");  
+
 		}
 		else if(entry.isIntersecting){
 			navigation.classList.remove("inverse"); 
+			bimage.classList.remove("inverse-brand-image");
+			btitle.classList.remove("inverse-brand-title");
 		}
 	})
 }
