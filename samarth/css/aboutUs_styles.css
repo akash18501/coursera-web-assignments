@@ -1,0 +1,441 @@
+:root{
+
+    --title-color: #141313;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(1, 1, 2, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+   
+
+}
+
+.row{
+    display: flex;
+}
+.name-txt{
+    font-family: 'Jost';
+}
+
+.sub-txt{
+    font-family: 'Montserrat';
+}
+
+.section-heading{
+    text-align: center;
+    font-family: 'Jost';
+}
+
+.sub-heading{
+    text-align: center;
+}
+.text-area{
+    padding: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  
+    font-family: 'Montserrat', monospace;
+    color:black;
+}
+
+.person-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+   border-radius: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  padding: 2px 16px;
+  width:100%;
+}
+
+/* Start Founder section */
+.founder-section{
+ margin:0px,140px;
+}
+
+.founder-text{
+    text-align: center; 
+
+}
+/* End Founder section */
+
+
+/* Start Advisor section */
+
+
+
+.advisor-text{
+    text-align: right;
+}
+
+.advisor-image-area{
+    border-left: 1px solid grey;
+}
+
+
+
+/* End Advisor section */
+
+
+
+
+
+
+
+/* Start speaker section */
+
+/* .speaker-panel-section{
+    margin:140px 0;
+} */
+
+.speaker-panel-section > .container-fluid{
+    margin:10% 0% 10% 0%;
+
+}
+
+.speaker-1-image-area{
+    border-right: 1px solid grey;
+}
+
+.speaker-1-text{
+    text-align: left;
+}
+
+
+
+
+.speaker-panel-section > .container-fluid{
+    margin:10% 0% 10% 0%;
+
+}
+
+
+
+/* End speaker section */
+
+/* vision mission styling */
+
+.main-content{
+  padding: 50px 0 0 0; 
+}
+
+.vision,.mission{
+  padding: 40px; 
+  margin-bottom: 20px; 
+}
+.vision p,.mission p{
+  font-size: 1.2rem; 
+}
+
+.vision img,.mission img{
+  margin-bottom: 20px; 
+}
+
+
+/* end vision mission  */
+
+
+/* make in india section  */
+
+.make-in-india{
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url('../img/india1.jpg');
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover; 
+  background-attachment: fixed;   
+}
+.make-in-india-header{
+  font-weight: bold; 
+  text-shadow: 0px 10px 20px black; 
+}
+.make-in-india-image{
+  box-shadow: 0px 10px 30px black; 
+  border-radius: 3%;
+
+}
+.make-in-india-para{
+  font-size: 1.2rem; 
+  text-shadow: 0px 10px 15px black; 
+}
+
+/* make in india section ends */
+
+
+
+/* Start vision - mission section */
+
+
+
+.vision-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+    
+}
+
+.mission-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 300px;
+   
+}
+
+
+
+.section-text{
+    padding: 2rem;
+    display: block;
+    text-align: center;
+    /* font-family: 'Montserrat', monospace; */
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+}
+
+
+/* End vission - mission section */
+
+* {
+  box-sizing: border-box;
+}
+
+
+#vision-mission {
+  background-color: #FFFFF0;
+}
+ #about-samarth {
+    background-color: #000000;
+}
+#our-team {
+  background-color:#ffff80;
+  font-weight: bold; 
+}
+
+.invert-row{
+  box-shadow: 0px 5px 20px black; 
+  margin-bottom: 50px; 
+}
+.invert-row-2{
+  box-shadow: 0px 5px 20px black; 
+}
+
+
+@media (max-width:567px){
+       
+    .advisor-text{
+        text-align: center;
+    }
+
+    .advisor-image-area{
+        border-left: 0px solid grey;
+    }
+    
+    .speaker-1-image-area{
+        border-right: 0px solid grey;
+    }
+
+    .speaker-1-text{
+        text-align: center;
+    }
+
+    .invert-row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 768px){
+
+    
+   
+    
+    
+    .advisor-text{
+        text-align: center;
+    }
+
+    .advisor-image-area{
+        border-left: 0px solid grey;
+    }
+
+
+
+    
+    .speaker-1-image-area{
+        border-right: 0px solid grey;
+    }
+
+    .speaker-1-text{
+        text-align: center;
+    }
+
+
+   
+
+    .invert-row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container_as {
+  
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container_r {
+  padding: 10px 5px 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container_l {
+  padding: 10px 40px 10px 5px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container_as::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #808080;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container_as {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container_as::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}

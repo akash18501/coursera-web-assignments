@@ -1,0 +1,57 @@
+.expansion-desc{
+	font-size: 1.1rem; 
+}
+
+
+.exp-plan-container{
+	border: 10px solid black; 
+}
+
+.piston-image{
+	width: 300px; 
+}
+
+@media screen  and (min-width: 1200px){
+	.shift-up{
+	margin-top: -80px; 
+
+}
+
+.cylinder-image{
+	width: 300px; 
+}
+}
+
+@media screen  and (min-width: 900px){
+	.shift-up{
+	margin-top: -40px; 
+
+}
+
+.cylinder-image{
+	width: 250px; 
+}
+}
+
+@media screen  and (min-width: 768px) and (max-width: 900px){
+	.shift-up{
+	margin-top: -40px; 
+
+}
+
+.cylinder-image{
+	width: 300px; 
+
+}
+}
+
+@media screen and (max-width: 768px){
+
+
+.piston-image{
+	width: 400px; 
+	height: 250px; 
+
+}
+}
+

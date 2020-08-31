@@ -1,0 +1,145 @@
+:root{
+
+    --title-color: #FB0404;
+    --text-color: #777777;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(1, 1, 2, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+   
+
+}
+
+.row{
+    display: flex;
+}
+
+.section-heading{
+    text-align: center;
+    font-family: 'Jost';
+   color:#000066;
+}
+
+
+.container {
+  padding: 2px 16px;
+  width:100%;
+}
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px  rgba(0,0,0,0.6);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #E0FFFF;
+  color: black;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.bg-light {
+    background-color: rgb(36, 36, 36) !important;
+}
+
+#our-manufacturing {
+        background-color:#99E3E0 ;
+         color: #000099;
+}
+
+
+
+.expansion-plan-section{
+  background-color :#99E3E0: 
+}
+
+.expansion-desc{
+  font-size: 1.1rem; 
+}
+
+
+.exp-plan-container{
+  box-shadow: 0 10px 30px black; 
+}
+
+.piston-image{
+  width: 300px; 
+}
+
+@media screen  and (min-width: 1200px){
+  .shift-up{
+  margin-top: -80px; 
+
+}
+
+.cylinder-image{
+  width: 300px; 
+}
+}
+
+@media screen  and (min-width: 900px){
+  .shift-up{
+  margin-top: -40px; 
+
+}
+
+.cylinder-image{
+  width: 250px; 
+}
+}
+
+@media screen  and (min-width: 768px) and (max-width: 900px){
+  .shift-up{
+  margin-top: -40px; 
+
+}
+
+.cylinder-image{
+  width: 300px; 
+
+}
+}
+
+@media screen and (max-width: 768px){
+
+
+.piston-image{
+  width: 400px; 
+  height: 250px; 
+
+}
+}
+

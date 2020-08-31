@@ -1,0 +1,16 @@
+.faq-section{
+	background-color: #EEEBEB; 
+}
+details{
+	background-color: white; 
+	padding: 15px; 
+	font-size: 1.2rem; 
+	border-radius: 5px; 
+	box-shadow: 0px 2px 5px grey;
+	transition: transform 0.1s ease-in-out;  
+}
+
+details:hover{
+	transform: scale(1.01); 
+}
+

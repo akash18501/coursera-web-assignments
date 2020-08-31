@@ -4,6 +4,7 @@ const navigation = document.querySelector(".navbar");
 const slider = document.querySelector("#my-slider");
 const bimage = document.querySelector(".brand-image"); 
 const btitle = document.querySelector(".brand-title"); 
+const collapseitem = document.querySelector(".navbar-collapse");
 
 
 const faders = document.querySelectorAll(".fade-in"); 
@@ -23,12 +24,14 @@ const callbackfunction = function(entries,sliderobserver){
 			navigation.classList.add("inverse");
 			bimage.classList.add("inverse-brand-image"); 
 			btitle.classList.add("inverse-brand-title");  
+			collapseitem.classList.remove("invert-drop");
 
 		}
 		else if(entry.isIntersecting){
 			navigation.classList.remove("inverse"); 
 			bimage.classList.remove("inverse-brand-image");
 			btitle.classList.remove("inverse-brand-title");
+			collapseitem.classList.add("invert-drop"); 
 		}
 	})
 }

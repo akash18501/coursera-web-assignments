@@ -6,7 +6,8 @@ body,html{
 	scroll-behavior: smooth; 
 }
 .stand-out{
-	color: #14B3DC; 
+	/* color: #14B3DC;  */
+	color: #468899  !important; 
 }
 /* intersection observer styles */
 .fade-in{
@@ -48,9 +49,11 @@ body,html{
 	vertical-align: middle; 
 	width: 70px; height: 70px; 
 	transition: all 0.2s; 
+	/* display: none; 	 */
 }
 
 .brand-title {
+	display: none; 
 	letter-spacing: 3px; 
 	/* border: 3px solid white;  */
 	border-radius: 5px; 
@@ -82,52 +85,61 @@ body,html{
 .inverse-brand-title{
 	font-size: 1.1rem; 
 	letter-spacing: 5px; 
+	/* display: block;  */
 }
 .inverse-brand-image{
 	box-shadow: 0 2px 10px black; 
 	width: 50px; 
 	height: 50px; 
+	display: block; 
 }
 
+.navbar-toggler-icon {
+    border: 1px solid white;  
+    width: 3rem;
+    border-radius: 6%; 
+}
+.navbar-dark .navbar-toggler {
 
+    padding: 0;
+}
 
 /* carousel styling  */
 
 .image1{
-	background-image: url("../img/bg2.jpg");
+	background-image: url("../img/bg3.jpg");
 	background-position: center; 
 	background-repeat: no-repeat;
-	background-size: cover; 
-	background-attachment: fixed; 
+	background-size:  cover; 
 	height: 100vh; 
 
 }
 .image2{
-	background-image: url("../img/bg3.jpg");
+	background-image: url("../img/bg5.jpg");
 	background-position: center; 
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
+	background-size:   cover; 
 	height: 100vh; 
 
 
 }
 .image3{
-	background-image: url("../img/bg4.jpg");
+	background-image: url("../img/bg2.jpg");
 	background-position: center; 
 	background-repeat: no-repeat;
-	background-attachment: fixed; 
-	height: 100vh; 
+	background-size:   cover; 
+	height: 100vh;  
 
 
 }
 
 #my-slider{
 	height: 100vh; 
-	/* width: 100%;  */
+	width: 100%; 
 }
 #my-slider img{
 	height: 100vh; 
-	/* width: 100% ;  */
+	width: 100% ; 
 }
 .carousel-item{
 	position: relative !important; 
@@ -138,7 +150,7 @@ body,html{
 	top: 0; 
 	width: 100%; 
 	height: 100%; 
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.5);
 }
 .carousel-indicators li {
 
@@ -148,7 +160,8 @@ body,html{
 
 }
 .carousel-caption h1{
-	padding-bottom: 30%; 
+	padding-bottom: 2%; 
+	color: black; 
 }
 
 /* carousel styling ends */
@@ -262,21 +275,27 @@ body,html{
 
 .testimonial{
 	/* background-image:  linear-gradient(45deg,rgba(246, 166, 190,1),rgba(246, 166, 190,0.8),rgba(246, 166, 190,0.5),rgba(246, 166, 190,0.2));  */
-	background: linear-gradient(50deg,#000428 20%,#182E56 20% 40%,#165388 40% 60%,#24748E 60% 80%,#06beb6 80% 100%,white 0% 100%); 
-	padding: 50px; 
+	/* background: linear-gradient(50deg,#000428 20%,#182E56 20% 40%,#165388 40% 60%,#24748E 60% 80%,#06beb6 80% 100%,white 0% 100%);  */
+	background: linear-gradient(50deg,#505052 20%,#919293 20% 40%,#9FB2C2 40% 60%,#7C8C91 60% 80%,#5F7372 80% 100%,white 0% 100%); 
+	background: linear-gradient(170deg,#9FB2C2 50%,#7C8C91 50%); 
+
+	padding-top:  50px;
+	padding-bottom: 50px;  
 	transition: all 0.5s ease-in; 
 }
 
 .blob{
-	text-shadow: 0px 10px 20px black !important; 
-	color: #C3C2C2;
+	text-shadow: 0px 1px 20px black !important; 
+	color: #490303; 
 }
 
 .testimonial-card{
-	background-color: #D3F8F9; 
+	background-color: #0E2323; 
 	padding: 20px; 
+	color: white; 
 	border-bottom-right-radius: 50px; 
 	border-top-left-radius: 50px; 
+	border-radius: 80px; 
 	box-shadow: 0px 10px 30px black; 
 }
 .test-image{
@@ -348,3 +367,35 @@ body,html{
 	color: #CA277B;
 }
 /* footer section */
+
+@media screen and  (max-width: 576px) {
+	
+.brand-image{
+	border-radius: 10%; 
+	vertical-align: middle; 
+	width: 60px; height: 60px; 
+	transition: all 0.2s; 
+}
+
+.brand-title {
+	letter-spacing: 3px; 
+	/* border: 3px solid white;  */
+	border-radius: 5px; 
+	padding: 10px;  
+	font-weight: bold; 
+	font-size: 1.3rem; 
+	/* letter-spacing: 5px;  */
+	transition: color .1s ease-in,border .1s ease-in; 
+	color: #FB0404; 
+	text-shadow: 0px 5px 5px black; 
+	/* vertical-align: middle;  */
+}
+.carousel-caption h1{
+	font-size: 2rem; 
+}
+.invert-drop{
+    text-align: center!important;
+    background-color: #272E2E;
+    opacity: 0.8;
+}
+}
